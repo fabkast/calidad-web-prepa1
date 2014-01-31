@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,18 +10,37 @@
   <title>Preparatoria uno</title>
 
   <link rel="stylesheet" type="text/css" href="vendor/semantic-ui/packaged/css/semantic.css">
+  <!-- Estilo general -->
   <link rel="stylesheet" type="text/css" href="css/site.css">
+
+  <!-- Hoja de estilo de prueba -->
+  <link rel="stylesheet" type="text/css" href="css/test.css">
 
   <script src="vendor/jquery/jquery.js"></script>
   <script src="vendor/semantic-ui/packaged/javascript/semantic.js"></script>
-
 </head>
 <body>
-  <div class="ui page grid">
-    <div class="column">
-      Aquí va el contenido
-    </di>
-  </div>
+  <header class="ui page grid">
+    <div class="equal height row">
+      <div class="three wide column logo">
+        Logo
+      </div>
+      <div class="thirteen wide column derecha">
+        <div class="encabezado row">Título</div>
+        <nav class="row">Menú</nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="content ui page grid">
+    <div class="column">Content</div>
+  </section>
+
+  <footer class="ui three column page grid">
+    <div class="column">Footer 1</div>
+    <div class="column">Footer 2</div>
+    <div class="column">Footer 3</div>
+  </footer>
 </body>
 
 </html>

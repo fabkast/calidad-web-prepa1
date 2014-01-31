@@ -1,1 +1,6 @@
 /** CSS común a todo el sitio **/
+body, html {
+	padding: 0;
+  	margin: 0;
+  	height: 100%;
+}

@@ -1,0 +1,36 @@
+body {
+  background-color: #555;
+}
+
+header,
+footer {
+  background-color: #555;
+}
+
+.content {
+  background-color: #ccc;
+}
+
+.logo {
+  background-color: #888;
+}
+
+.encabezado {
+  background-color: #666;
+}
+
+header.ui.grid .column.derecha {
+	padding-left: 0;
+}
+
+nav {
+  background-color: #777;
+}
+
+footer > .column {
+  background-color: #666;
+}
+
+footer > .column:nth-child(odd) {
+  background-color: #777;
+}
