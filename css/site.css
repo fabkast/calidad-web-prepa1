@@ -3,4 +3,187 @@ body, html {
 	padding: 0;
   	margin: 0;
   	height: 100%;
+
+  	font-family: 'Open Sans', sans-serif;
+
+  	background-color: #1B1635;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #2D2558;
+	font-family: Georgia, Times, serif;
+}
+
+.cinta {
+	background-color: #2D2558;
+	border-top: solid 6px #BF942B;
+}
+
+.cinta .ui.mini.icon.input > input {
+	height: 2.5em;
+}
+
+.ui.cinta.grid > .column {
+	margin-top: 0.3rem;
+	margin-bottom: 0.3rem;
+}
+
+header {
+	color: #fff;
+	background-color: #2D2558;
+	min-height: 100px;
+}
+
+.sub.header.column {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+header .links {
+	text-align: center;
+}
+
+header a {
+	text-decoration: none;
+	color: #fff;
+}
+
+header .ui.horizontal.links.list,
+header .ui.horizontal.links.list a {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 0.9em;
+	text-decoration: none;
+}
+
+header .ui.horizontal.links.list .item {
+	margin-top: 0.6em;
+	margin-bottom: 1.5em;
+}
+
+header .ui.horizontal.links.list .item > .icon {
+	display: block;
+	margin: 0.1em auto;
+	font-size: 2.5em !important;
+
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: -webkit-transform;
+	transition-property: transform;
+	-webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+header .ui.horizontal.links.list a:hover .icon {
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+
+header .search.row {
+	background-color: #BF942B;
+}
+
+.title.column {
+	min-width: 250px;
+}
+
+.title.column img {
+	border-right: 1px solid #8A86A2;
+}
+
+nav {
+	border-top: solid 1px #6b619f;
+}
+
+.ui.inverted.menu {
+	margin: 0;
+}
+
+nav,
+.ui.inverted.menu,
+.ui.dropdown .menu {
+	background-color: #1B1635;/*#3b3b6d;*//*#433b6e;*/
+}
+
+.ui.dropdown .menu .item {
+	border-bottom-color: rgba(255, 255, 255, 0.3);
+	border-top-color: rgba(255, 255, 255, 0.3);
+}
+
+.ui.inverted.menu a,
+.ui.inverted.menu .dropdown.item,
+.ui.inverted.menu .dropdown.item .menu .item,
+.ui.inverted.menu .dropdown.item .menu .item a {
+	color: #fff !important;
+	font-size: 0.96rem;
+}
+
+.ui.inverted.menu a,
+.ui.inverted.menu .dropdown.item {
+	font-weight: bold;
+}
+
+.ui.menu .ui.dropdown .menu .item:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+	background-color: #fff;
+}
+
+.bordered.segment {
+	border-top: 0.2em solid #BF942B;
+}
+
+.ui.avisos.items > .item:hover {
+	border-bottom-color: #BF942B !important;
+}
+
+footer {
+	color: #a3a3a3;
+	background-color: #1B1635;
+	border-top: solid 3px #BF942B;
+}
+
+footer {
+	padding-top: 1rem;
+}
+
+footer,
+footer .ui.grid > .column,
+footer .ui.grid > .row > .column {
+	font-size: 0.7rem;
+}
+
+footer address {
+	font-style: normal;
+}
+
+a i.icon,
+i.icon a {
+	text-decoration: none;
+}
+
+i.inverted.facebook.icon {
+	background-color: #4A66A0;
+}
+
+/* From Hover.css ( http://ianlunn.github.io/Hover ) */
+
+.grow {
+  display: inline-block;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.grow:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }

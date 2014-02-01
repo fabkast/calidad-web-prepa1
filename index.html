@@ -9,38 +9,174 @@
   <!-- Site Properities -->
   <title>Preparatoria uno</title>
 
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
   <link rel="stylesheet" type="text/css" href="vendor/semantic-ui/packaged/css/semantic.css">
   <!-- Estilo general -->
   <link rel="stylesheet" type="text/css" href="css/site.css">
-
-  <!-- Hoja de estilo de prueba -->
-  <link rel="stylesheet" type="text/css" href="css/test.css">
 
   <script src="vendor/jquery/jquery.js"></script>
   <script src="vendor/semantic-ui/packaged/javascript/semantic.js"></script>
 </head>
 <body>
-  <header class="ui page grid">
-    <div class="equal height row">
-      <div class="three wide column logo">
-        Logo
-      </div>
-      <div class="thirteen wide column derecha">
-        <div class="encabezado row">Título</div>
-        <nav class="row">Menú</nav>
+  <!-- Barra superior -->
+  <div class="ui cinta stackable page grid">
+    <div class="ten wide column">
+      <a href="http://www.uady.mx" alt="Universidad Autónoma de Yucatán"><img src="img/uadycinta.png"></a>
+    </div>
+    <div class="right aligned six wide column">
+      <div class="ui mini icon input">
+        <input type="text" placeholder="Buscar...">
+        <i class="search icon"></i>
       </div>
     </div>
-  </header>
+  </div> <!-- /fin de barra superior -->
 
-  <section class="content ui page grid">
-    <div class="column">Content</div>
-  </section>
+  <!-- Encabezado -->
+  <header class="ui stackable page grid">
+    <div class="middle aligned row">
+      <div class="ten wide column">
+        <div class="ui stackable grid">
+          <div class="middle aligned row">
+            <div class="title column">
+              <a href="index.html">
+                <h1 class="ui header">
+                  <img src="img/prepa1.png" alt="Escuela Preparatoria Uno">
+                </h1>
+              </a>
+            </div>
+            <div class="sub header column">Orgullosamente UADY</div>
+          </div>
+        </div>
+      </div>
+      <div class="six wide column">
+        <div class="ui inverted horizontal links list">
+          <a href="#" class="item">
+            <i class="desktop icon"></i>Sistema de atención
+          </a>
+          <a href="#" class="item">
+            <i class="book icon"></i>Educación en línea
+          </a>
+        </div>
+      </div>
+    </div>
+  </header><!-- /fin de encabezado -->
 
-  <footer class="ui three column page grid">
-    <div class="column">Footer 1</div>
-    <div class="column">Footer 2</div>
-    <div class="column">Footer 3</div>
-  </footer>
+  <!-- menú principal -->
+  <nav class="ui page grid">
+      <div class="ui column inverted menu">
+        <div class="ui inverted menu">
+          <a class="item">Inicio</a>
+          <div class="ui dropdown item">
+            Institución <i class="dropdown icon"></i>
+            <div class="menu">
+              <a class="item" href="#">Misión</a>
+              <a class="item" href="#">Visión</a>
+              <a class="item" href="#">Historia</a>
+              <a class="item" href="#">Valores</a>
+            </div>
+          </div>
+          <a class="item" href="#">Alumnos</a>
+          <a class="item" href="#">Padres de familia</a>
+          <a class="item" href="#">Profesores</a>
+        </div>
+      </div>
+  </nav>
+  <!-- /fin de menú principal -->
+
+  <!-- contenido -->
+  <section class="ui content page stackable grid">
+    
+    <!-- Columna principal -->
+    <div class="ten wide column">
+      <h2 class="ui dividing header">Avisos</h2>
+      <div class="ui stacked segment">
+        Aquí va el carrusel
+      </div>
+
+      <!-- avisos secundarios -->
+      <div class="ui three stackable avisos items">
+        <div class="item">
+          <div class="image">
+            <img src="/images/demo/highres4.jpg">
+          </div>
+          <div class="content">
+            <div class="name">Lorem ipsum</div>
+            <p class="description">Lorem ipsum dolor sitamet, consectetur adipiscing elit...</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="/images/demo/highres4.jpg">
+          </div>
+          <div class="content">
+            <div class="name">Lorem ipsum</div>
+            <p class="description">Lorem ipsum dolor sitamet, consectetur adipiscing elit...</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image">
+            <img src="/images/demo/highres4.jpg">
+          </div>
+          <div class="content">
+            <div class="name">Lorem ipsum</div>
+            <p class="description">Lorem ipsum dolor sitamet, consectetur adipiscing elit...</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="five wide column">
+      <div class="ui raised segment">Aquí va la guía de nuevo ingreso</div>
+      <div class="ui raised boletines segment">
+        <h2 class="ui dividing header">Boletines</h2>
+      </div>
+      <div class="ui raised enlaces segment">
+        Aquí van los demás enlaces
+      </div>
+    </div>
+  </section> <!-- /fin del contenido -->
+
+  <!-- pie -->
+  <footer>
+    <div class="ui three column page grid">
+      <div class="row">
+        <div class="column">
+          <a href="http://www.uady.mx"><img src="img/logouady.png" alt="UADY"></a>
+        </div>
+        <div class="column">
+          <address>
+            Calle 41 S/N
+            Ex-Terrenos del Fenix <br />
+            C.P. 97155 <br />
+            Tel: +52 (999) 922-57-05 <br />
+            Fax: +52 (999) 922-57-53 <br />
+            Correo: prepa1@www.uady.mx <br />
+            Mérida, Yucatán, México        
+          </address>
+        </div>
+        <div class="column">
+          <a href="#"><i class="circular big inverted facebook icon grow"></i></a>
+          <a href="http://www.youtube.com/channel/UCGf20yqxvtllpwXHIfOZtNg" alt="Canal de Youtube de la Prepa Uno"><i class="circular big inverted red youtube icon grow"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="ui page grid">
+      <div class="column">
+        © Todos los Derechos Reservados Escuela Preparatoria Uno, UADY 2007. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica, de otra forma requiere permiso previo por escrito de la institución.
+      </div>
+    </div>
+  </footer><!-- /fin de pie -->
+
+  <script>
+    $('.ui.dropdown')
+      .dropdown({
+        'on': 'hover'
+      })
+    ;
+  </script>
 </body>
 
 </html>
