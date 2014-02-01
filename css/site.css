@@ -14,6 +14,20 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Georgia, Times, serif;
 }
 
+a {
+	color: #b5871c;
+	text-decoration: none;
+
+	-webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+a:hover {
+	color: #d3b369;
+}
+
 .cinta {
 	background-color: #2D2558;
 	border-top: solid 6px #BF942B;
@@ -127,8 +141,17 @@ nav,
 	background-color: rgba(255, 255, 255, 0.1);
 }
 
-.content {
+.ui.page.grid.content {
+	background: url('../img/snow.png') repeat;
 	background-color: #fff;
+}
+
+.ui.items .item:hover {
+	cursor: auto;
+}
+
+.ui.items .item .content .name {
+	font-family: Georgia, Times, serif;
 }
 
 .bordered.segment {
