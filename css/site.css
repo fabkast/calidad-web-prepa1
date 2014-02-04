@@ -119,6 +119,10 @@ nav,
 	background-color: #1B1635;/*#3b3b6d;*//*#433b6e;*/
 }
 
+.ui.dropdown .menu {
+	background-color: #312c48;
+}
+
 .ui.dropdown .menu .item {
 	border-bottom-color: rgba(255, 255, 255, 0.3);
 	border-top-color: rgba(255, 255, 255, 0.3);
@@ -138,7 +142,7 @@ nav,
 }
 
 .ui.menu .ui.dropdown .menu .item:hover {
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .ui.page.grid.content {
@@ -338,4 +342,27 @@ i.inverted.facebook.icon {
 #slides a:hover,
 #slides a:active {
   color: #d3b369;
+}
+
+.ui.dropdown.many.options.item > .menu {
+	width: 225%;
+}
+
+.ui.dropdown.many.options.item > .menu .column {
+	width: 50%;
+	float: left;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	border-right: 1px solid #8A86A2;
+}
+
+.ui.dropdown .menu .item {
+	border: none;
+}
+
+.ui.dropdown .menu .item:hover {
+	border: none;
+}
+
+.ui.accordion {
+	width: 99%;
 }
