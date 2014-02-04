@@ -18,10 +18,10 @@ a {
 	color: #b5871c;
 	text-decoration: none;
 
-	-webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
+	-webkit-transition: all 350ms ease-out;
+    -moz-transition: all 350ms ease-out;
+    -o-transition: all 350ms ease-out;
+    transition: all 350ms ease-out;
 }
 
 a:hover {
@@ -191,6 +191,69 @@ i.inverted.facebook.icon {
 	background-color: #4A66A0;
 }
 
+.banner a img {
+	-webkit-transition: opacity 500ms ease-out;
+	-moz-transition: opacity 500ms ease-out;
+	transition: opacity 500ms ease-out;
+}
+
+.banner a:hover img {
+	opacity: 0.7;
+}
+
+.boletin {
+	position: relative;
+}
+
+.boletin > .hidden.content {
+	display: block;
+	color: #fff;
+	background-color: #000;
+	opacity: 0;
+	position:absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	visibility:hidden;
+	z-index: 25;
+	line-height: 100%;
+	-webkit-transition:visibility 0s linear 0.1s,opacity 0.5s ease-out;
+	-moz-transition:visibility 0s linear 0.1s,opacity 0.5s ease-out;
+	-o-transition:visibility 0s linear 0.1s,opacity 0.5s ease-out;
+	transition:visibility 0s linear 0.1s,opacity 0.5s ease-out;
+}
+
+.boletin a {
+	color: #fff;
+
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+
+	margin-bottom: 0.5em;
+}
+
+.boletin:hover > .hidden.content {
+	visibility:visible;
+	opacity: 0.9;
+}
+
+.boletin > .hidden.content > a {
+	text-align: center;
+	top: 50%;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	font-weight: bold;
+}
+
+.enlaces a img {
+	margin-bottom: 0.5em;
+}
+
 /* From Hover.css ( http://ianlunn.github.io/Hover ) */
 
 .grow {
@@ -209,4 +272,70 @@ i.inverted.facebook.icon {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+/** Slides */
+
+#slides {
+  display: none
+}
+
+#slides .slidesjs-navigation {
+  margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+#slides .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 13px;
+  height: 0;
+  padding-top: 13px;
+  background-image: url('../img/pagination.png');
+  background-position: 0 0;
+  float: left;
+  overflow: hidden;
+
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  background-position: 0 -13px
+}
+
+.slidesjs-pagination li a:hover {
+  background-position: 0 -26px
+}
+
+#slides a:link,
+#slides a:visited {
+  color: #333
+}
+
+#slides a:hover,
+#slides a:active {
+  color: #d3b369;
 }

@@ -70,10 +70,10 @@
           <div class="ui dropdown item">
             Institución <i class="dropdown icon"></i>
             <div class="menu">
-                <a class="item" href="file:///C:/xampp/htdocs/calidad-web-prepa1/Mision.html#">Misión</a>
-              <a class="item" href="file:///C:/xampp/htdocs/calidad-web-prepa1/Vision.html">Visión</a>
-              <a class="item" href="file:///C:/xampp/htdocs/calidad-web-prepa1/Historia.html">Historia</a>
-              <a class="item" href="file:///C:/xampp/htdocs/calidad-web-prepa1/Valores.html">Valores</a>
+                <a class="item" href="mision.html">Misión</a>
+              <a class="item" href="vision.html">Visión</a>
+              <a class="item" href="historia.html">Historia</a>
+              <a class="item" href="valores.html">Valores</a>
             </div>
           </div>
           <a class="item" href="#">Alumnos</a>
@@ -89,17 +89,23 @@
     
     <!-- Columna principal -->
     <div class="ten wide column">
-      <h2 class="ui dividing header">Avisos</h2>
       <div class="ui stacked segment">
-        Aquí va el carrusel
-
+        <div id="slides">
+          <img src="img/aviso.gif">
+          <img src="img/aviso.gif">
+          <img src="img/aviso.gif">
+          <img src="img/aviso.gif">
+          <img src="img/aviso.gif">
+          <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="left arrow icon"></i></a>
+          <a href="#" class="slidesjs-next slidesjs-navigation"><i class="right arrow icon"></i></a>
+        </div>
       </div>
 
       <!-- avisos secundarios -->
       <div class="ui three stackable avisos items">
         <div class="item">
           <div class="image">
-            <img src="/images/demo/highres4.jpg">
+            <img src="img/aviso-sq.gif">
           </div>
           <div class="content">
             <div class="name">Lorem ipsum</div>
@@ -108,7 +114,7 @@
         </div>
         <div class="item">
           <div class="image">
-            <img src="/images/demo/highres4.jpg">
+            <img src="img/aviso-sq.gif">
           </div>
           <div class="content">
             <div class="name">Lorem ipsum</div>
@@ -117,7 +123,7 @@
         </div>
         <div class="item">
           <div class="image">
-            <img src="/images/demo/highres4.jpg">
+            <img src="img/aviso-sq.gif">
           </div>
           <div class="content">
             <div class="name">Lorem ipsum</div>
@@ -130,12 +136,21 @@
 
     <!-- Columna derecha -->
     <div class="five wide column">
-      <div class="ui raised segment">Aquí va la guía de nuevo ingreso</div>
-      <div class="ui raised boletines segment">
+      <div class="banner">
+        <a href="#"><img class="ui rounded image" src="img/guia-nuevo-ingreso.jpg" alt="Guía del estudiante de nuevo ingreso"></a>
+      </div>
+      <div class="ui stacked boletines segment">
         <h2 class="ui dividing header">Boletines</h2>
+        <div class="boletin">
+          <img src="img/boletin.png" class="ui image" alt="Boletín">
+          <div class="hidden content"><a href="#">Título del boletín</a></div>
+        </div>
+        <a href="#"><i class="time icon"></i> Ver boletines anteriores</a>
       </div>
       <div class="ui raised enlaces segment">
-        Aquí van los demás enlaces
+        <a href="#"><img class="ui image" src="img/enlace.png"></a>
+        <a href="#"><img class="ui image" src="img/enlace.png"></a>
+        <a href="#"><img class="ui image" src="img/enlace.png"></a>
       </div>
     </div>
   </section> <!-- /fin del contenido -->
@@ -177,6 +192,17 @@
         'on': 'hover'
       })
     ;
+  </script>
+
+  <script src="vendor/slidesjs-3/jquery.slides.min.js"></script>
+  <script>
+    $(function(){
+      $("#slides").slidesjs({
+        width: 640,
+        height: 250,
+        navigation: false
+      });
+    });
   </script>
 </body>
 
