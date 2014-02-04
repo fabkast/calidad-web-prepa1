@@ -28,6 +28,12 @@ a:hover {
 	color: #d3b369;
 }
 
+.ui.grid > .column,
+.ui.grid > .row > .column { 
+	font-size: 0.9rem;
+	line-height: 1.2rem;
+}
+
 .cinta {
 	background-color: #2D2558;
 	border-top: solid 6px #BF942B;
